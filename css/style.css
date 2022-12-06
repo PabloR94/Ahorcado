@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(92, 207, 92)
+}
+
+.flex-container {
+    padding: 50px;
+    margin: 5% 20%;
+    border-radius: 25px;
+    background-color: rgb(44, 168, 121);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;;
+    width: 50%;
+}
+
+.boton{
+    border-radius: 25px;
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-left: 10%;
+    cursor: pointer;
+}
