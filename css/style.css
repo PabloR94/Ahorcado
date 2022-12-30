@@ -2,6 +2,12 @@ body {
     background-color: rgb(92, 207, 92)
 }
 
+h1, h4 {
+    padding: 5px;
+    text-align: center;
+    color: beige;
+}
+
 .flex-container {
     padding: 50px;
     margin: 5% 20%;
@@ -9,8 +15,9 @@ body {
     background-color: rgb(44, 168, 121);
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;;
+    justify-content: center;
     width: 50%;
+    display: none;
 }
 
 .boton{
@@ -19,5 +26,39 @@ body {
     padding: 20px;
     margin-bottom: 15px;
     margin-left: 10%;
+    cursor: pointer;
+}
+
+#new-word{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 20px;
+    align-items: center;
+    display: none;
+}
+
+#new-word > h3{
+    color:beige;
+    padding: 10px;
+}
+
+#new-word > input{
+    width: 200px;
+    height: 30px;
+}
+
+#new-word > div{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#new-word > div > button{
+    border-radius: 25px;
+    width: 80%;
+    padding: 30px;
+    margin: 5px;
     cursor: pointer;
 }

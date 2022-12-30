@@ -11,6 +11,7 @@
 <body>
     <header>
         <h1>Ahorcado</h1>
+        <h4>¿Podrás salvar al inocente?</h4>
     </header>
     <main>
         <section id="seleccion" class="flex-container">
@@ -18,12 +19,25 @@
             <button id="add-word" class="boton"> Agregar nueva palabra </button>
         </section>
         <section id="new-word">
+            <h3>Ingrese una palabra</h3>
+            <input type="text">
+            <div>
+                <button id="save-play"> Guardar y Empezar </button>
+                <button id="cancel"> Cancelar </button>
+            </div>
         </section>
         <section id="game">
+            <div id="hanged"></div>
+            <div id="right-word"></div>
+            <div id="wrong-word"></div>
+            <div id="game-buttons">
+                <button id="new-game"> Nuevo juego </button>
+                <button id="desist"> Desistir </button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>Copyright © 2022 | Website designed by Pablo Rilh</p>
+        <p>Copyright © 2022 | Website designed and developer by Pablo Rilh</p>
     </footer>
 </body>
 </html>
