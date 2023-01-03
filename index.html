@@ -14,7 +14,7 @@
         <h4>¿Podrás salvar al inocente?</h4>
     </header>
     <main>
-        <section id="seleccion" class="flex-container">
+        <section id="choose" class="flex-container">
             <button id="play-game" class="boton"> Iniciar Juego </button>
             <button id="add-word" class="boton"> Agregar nueva palabra </button>
         </section>
@@ -27,8 +27,11 @@
             </div>
         </section>
         <section id="game">
-            <div id="hanged"></div>
-            <div id="right-word"></div>
+            <div id="hanged">
+                <img src="./img/horca.png" alt="horca">
+            </div>
+            <div id="right-word">
+            </div>
             <div id="wrong-word"></div>
             <div id="game-buttons">
                 <button id="new-game"> Nuevo juego </button>
@@ -39,5 +42,8 @@
     <footer>
         <p>Copyright © 2022 | Website designed and developer by Pablo Rilh</p>
     </footer>
+
+    <script src="./js/scrip.js"></script>
+    <script src="./js/game.js"></script>
 </body>
 </html>

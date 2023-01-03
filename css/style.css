@@ -17,7 +17,6 @@ h1, h4 {
     flex-flow: column wrap;
     justify-content: center;
     width: 50%;
-    display: none;
 }
 
 .boton{
@@ -61,4 +60,11 @@ h1, h4 {
     padding: 30px;
     margin: 5px;
     cursor: pointer;
+}
+
+#game{
+    display: none;
+}
+#hanged{
+    text-align: center;
 }
