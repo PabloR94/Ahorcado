@@ -64,7 +64,49 @@ h1, h4 {
 
 #game{
     display: none;
+    flex-flow: column wrap;
+    align-items: center;
 }
+
 #hanged{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 70%;
+}
+
+#hanged > img{
+    max-width: 50%;
+}
+
+.letter{
+    display: inline-block;
+    vertical-align: middle;
     text-align: center;
+}
+
+.right{
+    margin: 0.5rem;
+    width: 2rem;
+    font-size: 1.8rem;
+    border-bottom: solid 1px;
+}
+
+.wrong{
+    margin: 1rem;
+    color: rgb(98, 97, 97);
+}
+
+#game-buttons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.boton2{
+    border-radius: 25px;
+    width: 30%;
+    padding: 20px;
+    margin: 1rem;
+    cursor: pointer;
 }

@@ -1,4 +1,3 @@
-const main = document.querySelector("main");
 const choose = document.querySelector("#choose");
 const gameSection = document.querySelector("#game");
 const newWordSection = document.querySelector("#new-word");
