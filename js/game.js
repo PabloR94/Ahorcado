@@ -113,5 +113,10 @@ function createGame(){
         guess(game, letter)
         draw(game)
     }
+
+    window.newGame = function newGame(){
+        
+    }
+
     draw(game)
 }())
