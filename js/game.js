@@ -24,12 +24,20 @@ function createGame(){
     //Actualizar imagen del ahorcado
         var $elem
         $elem = $html.hanged
-        $elem.src = 'img/partes/0' + game.state + '.png'
+
+        var state =game.state
+        if (state == 8){
+            state = game.before
+        }
+        $elem.src = 'img/partes/0' + state + '.png'
     
     //Creación de letras adivinadas
         var word = game.word
         var right = game.right
         $elem = $html.right
+        //Borrar elementos anteriores
+        $elem.innerHTML = ''
+        //
         for (let letter of word){
             let $span = document.createElement('span')
             let $txt = document.createTextNode('')
@@ -44,6 +52,9 @@ function createGame(){
         //Creación de letras erradas
         var wrong = game.wrong
         $elem = $html.wrong
+        //Borrar elementos anteriores
+        $elem.innerHTML = ''
+        //
         for (let letter of wrong){
             let $span = document.createElement('span')
             let $txt = document.createTextNode(letter)
@@ -75,6 +86,7 @@ function createGame(){
             for (let l of word){
                 if (right.indexOf(l) < 0 && l != letter){
                     win = false
+                    game.before = game.state
                     break
                 }
             }
@@ -92,8 +104,14 @@ function createGame(){
         }
     }
     
+    window.onkeypress = function guessLetter(e){
+        var letter = e.key
+        letter = letter.toUpperCase()
+        if (/[^A-ZÑ]/.test(letter)){
+            return
+        }
+        guess(game, letter)
+        draw(game)
+    }
     draw(game)
-    guess(game, 'U')
-    guess(game, 'R')
-
 }())
