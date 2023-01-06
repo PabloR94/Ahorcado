@@ -11,5 +11,5 @@ const buttonPlayGame = document.querySelector("#play-game");
 const buttonAddWord = document.querySelector("#add-word");
 
 buttonPlayGame.addEventListener("click", createGame);
-buttonAddWord.addEventListener("click",);
+buttonAddWord.addEventListener("click", addWord);
 }

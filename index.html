@@ -20,7 +20,8 @@
         </section>
         <section id="new-word">
             <h3>Ingrese una palabra</h3>
-            <input type="text">
+            <input type="text" placeholder="Escribe una palabra ..." onkeydown="return /[A-ZÑ]/i.test(event.key)" onKeyUp="this.value=this.value.toUpperCase();">
+            <p>Máx. 15 letras, sin tilde ni caracteres especiales</p>
             <div>
                 <button id="save-play"> Guardar y Empezar </button>
                 <button id="cancel"> Cancelar </button>
@@ -44,8 +45,9 @@
         <p>Copyright © 2022 | Website designed and developer by Pablo Rilh</p>
     </footer>
 
-    <script src="./js/scrip.js"></script>
     <script src="./js/words.js"></script>
+    <script src="./js/new-word.js"></script>
     <script src="./js/game.js"></script>
+    <script src="./js/scrip.js"></script>
 </body>
 </html>

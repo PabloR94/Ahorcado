@@ -155,6 +155,4 @@ function principal(){
     }
 
     newGame()
-    console.log(game)
-
 }())
