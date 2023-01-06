@@ -5,14 +5,21 @@ function createGame(){
     newWordSection.style.display = "none";
 }
 
+const buttonDesist = document.querySelector("#desist");
+buttonDesist.addEventListener("click", principal);
+
+function principal(){
+    choose.style.display = "flex";
+    gameSection.style.display = "none";
+    newWordSection.style.display = "none";
+}
+
 ;(function(){
     'use strict'
-    var game = {
-        word:'ALURA',
-        state: 7,
-        right: ['A', 'L'],
-        wrong: ['B', 'J', 'K', 'C']
-    }
+    //Almacenar configuración
+    var game = null
+    //Comprobar si se ha enviado alguna alerta
+    var end = false
 
     var $html = {
         hanged: document.getElementById('horca'),
@@ -111,12 +118,43 @@ function createGame(){
             return
         }
         guess(game, letter)
+        var state = game.state
+        if (state == 8 && !end){
+            setTimeout(alertWin, 500)
+            end = true
+        } else if (state == 1 && !end){
+            let word = game.word
+            let fn = alertLose.bind(undefined, word)
+            setTimeout(fn, 500)
+            end = true
+        }
         draw(game)
     }
 
     window.newGame = function newGame(){
-        
+        var word = randomWord()
+        game = {}
+        game.word = word
+        game.state = 7
+        game.right = []
+        game.wrong = []
+        end = false
+        draw(game)
     }
 
-    draw(game)
+    function randomWord(){
+        var index = ~~(Math.random() * wordsList.length)
+        return wordsList [index]
+    }
+
+    function alertWin(){
+        alert('Felicidades, ganaste!')
+    }
+    function alertLose(word){
+        alert('Lo siento, perdiste... la palabra era: ' + word)
+    }
+
+    newGame()
+    console.log(game)
+
 }())
