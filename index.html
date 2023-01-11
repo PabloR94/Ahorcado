@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Alertas Personalizadas-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>Ahorcado</title>
 </head>
 <body>
@@ -20,7 +23,7 @@
         </section>
         <section id="new-word">
             <h3>Ingrese una palabra</h3>
-            <input type="text" placeholder="Escribe una palabra ..." onkeydown="return /[A-ZÑ]/i.test(event.key)" onKeyUp="this.value=this.value.toUpperCase();">
+            <input id="input-txt" type="text" placeholder="Escribe una palabra ..." style="text-transform:uppercase" maxlength="15">
             <p>Máx. 15 letras, sin tilde ni caracteres especiales</p>
             <div>
                 <button id="save-play"> Guardar y Empezar </button>
@@ -46,8 +49,8 @@
     </footer>
 
     <script src="./js/words.js"></script>
-    <script src="./js/new-word.js"></script>
     <script src="./js/game.js"></script>
+    <script src="./js/new-word.js"></script>
     <script src="./js/scrip.js"></script>
 </body>
 </html>

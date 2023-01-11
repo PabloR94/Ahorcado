@@ -1,21 +1,9 @@
 
 function createGame(){
+    'use strict'
     choose.style.display = "none";
     gameSection.style.display = "flex";
     newWordSection.style.display = "none";
-}
-
-const buttonDesist = document.querySelector("#desist");
-buttonDesist.addEventListener("click", principal);
-
-function principal(){
-    choose.style.display = "flex";
-    gameSection.style.display = "none";
-    newWordSection.style.display = "none";
-}
-
-;(function(){
-    'use strict'
     //Almacenar configuración
     var game = null
     //Comprobar si se ha enviado alguna alerta
@@ -155,4 +143,13 @@ function principal(){
     }
 
     newGame()
-}())
+}
+
+const buttonDesist = document.querySelector("#desist");
+buttonDesist.addEventListener("click", principal);
+
+function principal(){
+    choose.style.display = "flex";
+    gameSection.style.display = "none";
+    newWordSection.style.display = "none";
+}
