@@ -5,6 +5,7 @@ const newWordSection = document.querySelector("#new-word");
 window.onload = function main(){
 gameSection.style.display = "none";
 newWordSection.style.display = "none";
+document.getElementById("music1").play();
 
 //Botones
 const buttonPlayGame = document.querySelector("#play-game");

@@ -4,6 +4,13 @@ function createGame(){
     choose.style.display = "none";
     gameSection.style.display = "flex";
     newWordSection.style.display = "none";
+    document.getElementById("music1").pause();
+    document.getElementById("music2").play();
+
+    window.scroll({
+        top: 150,
+        behavior: 'smooth'
+    });
     //Almacenar configuración
     var game = null
     //Comprobar si se ha enviado alguna alerta
@@ -152,4 +159,6 @@ function principal(){
     choose.style.display = "flex";
     gameSection.style.display = "none";
     newWordSection.style.display = "none";
+    document.getElementById("music2").pause();
+    document.getElementById("music1").play();
 }

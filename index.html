@@ -15,19 +15,32 @@
     <header>
         <h1>Ahorcado</h1>
         <h4>¿Podrás salvar al inocente?</h4>
+        <audio id="music1" loop>
+            <source src="./audio/Medieval1.mp3" type="audio/mp3">
+            Este navegador no acepta formatos de audio
+        </audio>
+        <audio id="music2" loop>
+            <source src="./audio/Medieval2.mp3" type="audio/mp3">
+            Este navegador no acepta formatos de audio
+        </audio>
     </header>
     <main>
         <section id="choose" class="flex-container">
+            <img src="./img/ahorcado1.png" alt="ahorcado">
+            <div class="buttons">
             <button id="play-game" class="boton"> Iniciar Juego </button>
             <button id="add-word" class="boton"> Agregar nueva palabra </button>
+            </div>
         </section>
         <section id="new-word">
+            <div class="square">
             <h3>Ingrese una palabra</h3>
             <input id="input-txt" type="text" placeholder="Escribe una palabra ..." style="text-transform:uppercase" maxlength="15">
             <p>Máx. 15 letras, sin tilde ni caracteres especiales</p>
-            <div>
-                <button id="save-play"> Guardar y Empezar </button>
-                <button id="cancel"> Cancelar </button>
+            </div>
+            <div class="buttons2">
+                <button id="save-play" class="boton"> Guardar y Empezar </button>
+                <button id="cancel" class="boton"> Cancelar </button>
             </div>
         </section>
         <section id="game">
