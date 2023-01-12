@@ -1,4 +1,4 @@
-let wordsList = [
+var wordsList = [
     "VACA",
     "TELEFONO",
     "ORQUESTA",

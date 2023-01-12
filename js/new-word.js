@@ -43,7 +43,7 @@ function addWord() {
     }
 
     else {
-        //wordsList.push(input) Revisar
+        wordsList.push(input)
         Swal.fire({
             icon: 'success',
             iconColor: '#35FA32',
@@ -53,5 +53,6 @@ function addWord() {
             text: 'Palabra añadida con éxito',
         })
         value()
+        createGame()
     }
 }
