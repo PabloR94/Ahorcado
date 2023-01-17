@@ -6,6 +6,7 @@ function createGame(){
     newWordSection.style.display = "none";
     document.getElementById("music1").pause();
     document.getElementById("music2").play();
+    sound();
 
     window.scroll({
         top: 150,

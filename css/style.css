@@ -34,6 +34,15 @@ h4{
     font-size: 3rem;
 }
 
+.sonido{
+    float: right;
+    text-align: center;
+}
+
+.volumen{
+    display: none;
+}
+
 main{
     margin: 10px;
 }

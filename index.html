@@ -13,8 +13,6 @@
 </head>
 <body>
     <header>
-        <h1>Ahorcado</h1>
-        <h4>¿Podrás salvar al inocente?</h4>
         <audio id="music1" loop>
             <source src="./audio/Medieval1.mp3" type="audio/mp3">
             Este navegador no acepta formatos de audio
@@ -23,7 +21,14 @@
             <source src="./audio/Medieval2.mp3" type="audio/mp3">
             Este navegador no acepta formatos de audio
         </audio>
+        <div class="sonido" id="sound">
+            <img src="./img/sonidoOn.png" alt="sonido" id="speaker">
+            <input type="range" max="1" min="0" step="0.1" class="volumen">
+        </div>
+        <h1>Ahorcado</h1>
+        <h4>¿Podrás salvar al inocente?</h4>
     </header>
+    
     <main>
         <section id="choose" class="flex-container">
             <img src="./img/ahorcado1.png" alt="ahorcado">
@@ -57,10 +62,12 @@
             </div>
         </section>
     </main>
+    
     <footer>
         <p>Copyright © 2022 | Website designed and developer by Pablo Rilh</p>
     </footer>
 
+    <script src="./js/audio.js"></script>
     <script src="./js/words.js"></script>
     <script src="./js/game.js"></script>
     <script src="./js/new-word.js"></script>
