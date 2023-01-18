@@ -9,7 +9,7 @@ function createGame(){
     sound();
 
     window.scroll({
-        top: 150,
+        top: 210,
         behavior: 'smooth'
     });
     //Almacenar configuración
@@ -128,14 +128,14 @@ function createGame(){
     }
 
     window.newGame = function newGame(){
-        var word = randomWord()
-        game = {}
-        game.word = word
-        game.state = 7
-        game.right = []
-        game.wrong = []
-        end = false
-        draw(game)
+        var word = randomWord();
+        game = {};
+        game.word = word;
+        game.state = 7;
+        game.right = [];
+        game.wrong = [];
+        end = false;
+        draw(game);
     }
 
     function randomWord(){
@@ -144,10 +144,35 @@ function createGame(){
     }
 
     function alertWin(){
-        alert('Felicidades, ganaste!')
+        document.getElementById("music2").pause();
+        Swal.fire({
+            icon: 'success',
+            iconColor: '#35FA32',
+            background: '#c89f65',
+            title: '¡Felicidades, ganaste!',
+            confirmButtonColor: '#4A5E60',
+            text: 'Has salvado al inocente',
+        });
+        document.getElementById("sound1").play();
+        setTimeout(function(){
+            document.getElementById("music2").play();
+        }, 3000);
     }
     function alertLose(word){
-        alert('Lo siento, perdiste... la palabra era: ' + word)
+        document.getElementById("music2").pause();
+        Swal.fire({
+            icon: 'error',
+            iconColor: '#FA3222',
+            background: '#c89f65',
+            title: 'Lo siento, perdiste...',
+            showConfirmButton: false,
+            text: 'la palabra era: ' + word,
+            showCloseButton: true,
+        });
+        document.getElementById("sound2").play();
+        setTimeout(function(){
+            document.getElementById("music2").play();
+        }, 3000);
     }
 
     newGame()
@@ -162,4 +187,8 @@ function principal(){
     newWordSection.style.display = "none";
     document.getElementById("music2").pause();
     document.getElementById("music1").play();
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
 }

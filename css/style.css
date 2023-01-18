@@ -58,10 +58,8 @@ main{
 
 .buttons {
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     border-radius: 25px;
-    background-color: rgb(40, 165, 82);
-    opacity: 0.9;
     display: flex;
     flex-flow: column wrap;
     width: 50%;
@@ -128,7 +126,7 @@ main{
     display: flex;
     justify-content: center;
     padding: 20px;
-    width: 70%;
+    width: 50%;
 }
 
 #hanged > img{

@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <audio id="music1" loop>
+        <audio id="music1" autoplay loop>
             <source src="./audio/Medieval1.mp3" type="audio/mp3">
             Este navegador no acepta formatos de audio
         </audio>
@@ -60,6 +60,8 @@
                 <button id="new-game" class="boton2" onclick="newGame()"> Nuevo Juego </button>
                 <button id="desist" class="boton2"> Desistir </button>
             </div>
+            <audio src="./audio/success.mp3" id="sound1"></audio>
+            <audio src="./audio/game-over.mp3" id="sound2"></audio>
         </section>
     </main>
     
