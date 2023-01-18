@@ -3,8 +3,6 @@ function sound(){
     const music1 = document.getElementById('music1');
     const music2 = document.getElementById('music2')
     const volumen = document.querySelector('.volumen');
-    music1.volume = 0.4;
-    music2.volume = 0.4;
     sound.addEventListener("click", function(){
         volumen.style.display= "flex";
         volumen.addEventListener("click", function(){

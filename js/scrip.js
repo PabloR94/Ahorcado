@@ -6,6 +6,9 @@ window.onload = function main(){
 gameSection.style.display = "none";
 newWordSection.style.display = "none";
 document.getElementById("music1").play();
+music1.volume = 0.4;
+document.getElementById("music2");
+music2.volume = 0.4;
 sound();
 
 //Botones
