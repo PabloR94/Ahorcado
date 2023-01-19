@@ -15,6 +15,8 @@ body {
     background-size: cover;
 
     backdrop-filter: blur(1px);
+
+    height: 100vh;
 }
 
 h1, h4 {
@@ -32,7 +34,7 @@ h1{
 }
 
 h4{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .sonido{
@@ -40,7 +42,11 @@ h4{
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 10%;
+    width: 6%;
+}
+
+#speaker{
+    width: 100%;
 }
 
 .volumen{
@@ -58,7 +64,7 @@ main{
 }
 
 .flex-container > img{
-    width: 15%;
+    width: 18%;
 }
 
 .buttons {
@@ -134,8 +140,8 @@ main{
     width: 50%;
 }
 
-#hanged > img{
-    max-width: 50%;
+#horca{
+    max-width: 100%
 }
 
 #right-word{
@@ -187,11 +193,23 @@ main{
 }
 
 footer{
-    text-align: center;
     background-color: #543f25;
     color: beige;
     margin-top: 30px;
-    padding: 10px;
+    opacity: 0.9;
+    text-align: center;
     width: 100%;
-    height: 100%;
+    height: 90px;
+    padding-top: 1%;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.redes{
+    width: 30px;
+    margin: 10px;
 }
