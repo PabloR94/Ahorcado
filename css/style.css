@@ -175,6 +175,10 @@ main{
     color: rgb(98, 97, 97);
 }
 
+#input{
+    opacity: 0;
+}
+
 #game-buttons{
     display: flex;
     justify-content: center;
