@@ -16,7 +16,9 @@ body {
 
     backdrop-filter: blur(1px);
 
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 h1, h4 {
@@ -195,7 +197,7 @@ main{
 footer{
     background-color: #543f25;
     color: beige;
-    margin-top: 30px;
+    margin-top: auto;
     opacity: 0.9;
     text-align: center;
     width: 100%;
