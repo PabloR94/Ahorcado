@@ -2,6 +2,7 @@ function btnAddWord(){
     choose.style.display = "none";
     gameSection.style.display = "none";
     newWordSection.style.display = "flex";
+    document.getElementById("input-txt").focus()
 }
 
 //Botones
