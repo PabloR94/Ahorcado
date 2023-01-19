@@ -4,7 +4,6 @@ function createGame(){
     choose.style.display = "none";
     gameSection.style.display = "flex";
     newWordSection.style.display = "none";
-    document.getElementById("input").focus();
     document.getElementById("music1").pause();
     document.getElementById("music2").play();
     sound();
