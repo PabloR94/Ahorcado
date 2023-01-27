@@ -1,7 +1,7 @@
 # Ahorcado
 **Juego del Ahorcado**
 
-Este proyecto corresponde a un challenge pendiente del curso  de programación de Alura-Latam.
+Este proyecto corresponde a un challenge pendiente del curso del programa ONE - Oracle Next Education.
 
 Se trata del clasico juego del ahorcado, donde el jugador debera adivinar la palabra para salvar al inocente
 ¿Lo lograras?
