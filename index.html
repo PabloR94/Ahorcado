@@ -58,6 +58,10 @@
             </div>
             <div id="wrong-word">
             </div>
+            <div id="keyboard">
+                <img src="./img/teclado.png" alt="teclado" id="key-img">
+                <input id="input-key" type="text" maxlength="1" size="1" oninput="this.value = this.value.replace(/[^a-zñ]/,'')">
+            </div>
             <div id="game-buttons">
                 <button id="new-game" class="boton2" onclick="newGame()"> Nuevo Juego </button>
                 <button id="desist" class="boton2"> Desistir </button>

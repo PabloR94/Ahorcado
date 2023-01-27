@@ -19,6 +19,7 @@
         width: 100%;
     }
 
+
     #game-buttons{
         flex-flow: column wrap;
         align-items: center;
@@ -30,5 +31,11 @@
 
     .redes{
         width: 20px;
+    }
+}
+
+@media(max-width: 720px) {
+    #keyboard{
+        display: flex;
     }
 }

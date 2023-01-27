@@ -175,6 +175,15 @@ main{
     color: rgb(98, 97, 97);
 }
 
+#keyboard{
+    display: none;
+    margin: 10px;
+}
+
+#input-key{
+    display: none;
+    color: white;
+}
 
 #game-buttons{
     display: flex;

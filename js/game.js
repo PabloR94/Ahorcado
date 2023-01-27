@@ -175,8 +175,9 @@ function createGame(){
         }, 3000);
     }
 
-    newGame()
+    newGame();
 }
+
 
 const buttonDesist = document.querySelector("#desist");
 buttonDesist.addEventListener("click", principal);
@@ -191,4 +192,13 @@ function principal(){
         top: 0,
         behavior: 'smooth'
     });
+}
+
+//Teclado movil
+const inputIMG = document.getElementById("input-key");
+const btnkeyboard = document.getElementById("key-img");
+btnkeyboard.onclick = function(){
+    btnkeyboard.style.display = "none";
+    inputIMG.style.display = "flex";
+    inputIMG.focus();
 }
